@@ -10,4 +10,4 @@ git pull origin main
 npm install
 
 # Restart your Node.js application using pm2 (adjust the script based on your actual start command)
-pm2 restart index.js
+echo "Your project is deployed"
