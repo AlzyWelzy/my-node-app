@@ -8,4 +8,4 @@ git pull origin main
 
 
 # Restart your Node.js application using pm2 (adjust the script based on your actual start command)
-echo "Your project is deployed"
+echo "Your project is hosted"
