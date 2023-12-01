@@ -24,6 +24,7 @@ jobs:
 
       - name: Deploy to VPS
         run: |
+          mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa deploy.sh root@140.238.240.122:/root/repo-auto/your-node-app/
